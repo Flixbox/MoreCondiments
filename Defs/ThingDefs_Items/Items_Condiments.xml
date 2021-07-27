@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>MC_BloodInfusedSauce</defName>
+		<label>blood-infused sauce</label>
+		<description>A thick sauce infused with alcohol and blood. Tastes weird and makes you not want to eat for a while.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/MC_BloodInfusedSauce</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.64</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>1.1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<ingredient>
+		  <mergeCompatibilityTags>
+			<li>Condiments</li>
+		  </mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+
+</Defs>
