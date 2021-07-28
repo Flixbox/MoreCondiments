@@ -25,10 +25,7 @@
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>VBE_DrinksSimpleSpirits</li>
-						<li>VBE_DrinksLuxurySpirits</li>
-					</categories>
+					<categories></categories>
 					<thingDefs>
 						<li>Beer</li>
 					</thingDefs>
@@ -37,10 +34,7 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>VBE_DrinksSimpleSpirits</li>	
-				<li>VBE_DrinksLuxurySpirits</li>					
-			</categories>
+			<categories></categories>
 			<thingDefs>	
 				<li>Beer</li>								
 			</thingDefs>
