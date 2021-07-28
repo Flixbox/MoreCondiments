@@ -4,9 +4,11 @@
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>MC_BloodInfusedSauce</defName>
 		<label>blood-infused sauce</label>
-		<description>A thick sauce infused with alcohol and blood. Tastes weird and makes you not want to eat for a while.</description>
+		<description>A thick sauce infused with alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
 		<graphicData>
-			<texPath>Things/Items/Condiments/MC_BloodInfusedSauce</texPath>
+			<texPath>Things/Item/Drug/Beer</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(47,0,0)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>2.64</MarketValue>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MC_BloodInfusedSauce</defName>
+		<label>make blood infused sauce</label>
+		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
+		<jobString>Making blood infused sauce.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BloodItem</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksSimpleSpirits</li>
+						<li>VBE_DrinksLuxurySpirits</li>
+					</categories>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksLuxurySpirits</li>					
+			</categories>
+			<thingDefs>	
+				<li>Beer</li>								
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MC_BloodInfusedSauce>10</MC_BloodInfusedSauce>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

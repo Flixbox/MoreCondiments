@@ -19,5 +19,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>VanillaExpanded.VCookE</li>
+		<li>VanillaExpanded.VBrewE</li>
+		<li>TrahsPanda.Blood</li>
 	</loadAfter>
 </ModMetaData>
