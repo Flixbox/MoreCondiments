@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Things/Item/Drug/Beer</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(47,0,0)</color>
+			<color>(170,30,30)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>2.64</MarketValue>
