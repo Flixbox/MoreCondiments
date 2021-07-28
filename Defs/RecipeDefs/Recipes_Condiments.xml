@@ -4,7 +4,7 @@
 	<RecipeDef>
 		<defName>MC_BloodInfusedSauce</defName>
 		<label>make blood infused sauce</label>
-		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
+		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while. The alcohol evaporates in the process.</description>
 		<jobString>Making blood infused sauce.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -17,9 +17,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>BloodItem</li>
-					</thingDefs>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
 				</filter>
 				<count>10</count>
 			</li>
@@ -34,7 +34,9 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories></categories>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
 			<thingDefs>	
 				<li>Beer</li>								
 			</thingDefs>
