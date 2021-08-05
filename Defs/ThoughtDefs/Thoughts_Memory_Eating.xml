@@ -17,4 +17,17 @@
 		</stages>
 	</ThoughtDef>
 
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>MC_ConsumedSimpleBroth</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed simple broth</label>
+				<description>That was rather tasty.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 </Defs>

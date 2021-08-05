@@ -49,44 +49,42 @@
 
 	<RecipeDef>
 		<defName>MC_BrothSimple</defName>
-		<label>cook simple broth</label>
-		<description>Cook simple broth from one ingredient.</description>
-		<jobString>Cooking simple broth.</jobString>
+		<label>cook simple meat broth</label>
+		<description>Cook some simple meat broth from one ingredient.</description>
+		<jobString>Cooking simple meat broth.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
 		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>FoodRaw</li>
+						<li>MeatRaw</li>
 					</categories>
 				</filter>
 				<count>5.0</count>
 			</li>
 		</ingredients>
 		<products>
-			<MealSimple>5</MealSimple>
+			<MC_MeatCooked>5</MC_MeatCooked>
 			<MC_BrothSimple>5</MC_BrothSimple>
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
-			<specialFiltersToDisallow>
-				<li>AllowPlantFood</li>
-			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
 			<disallowedThingDefs>
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
@@ -94,6 +92,7 @@
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>
