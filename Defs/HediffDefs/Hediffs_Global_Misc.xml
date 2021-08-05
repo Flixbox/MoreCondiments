@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 
@@ -21,9 +21,9 @@
 			</li>
 		</comps>
 		<stages>
-			<li>   
+			<li>
 				<statOffsets>
-					<HungerRateMultiplier>-0.30</HungerRateMultiplier>					
+					<HungerRateMultiplier>-0.30</HungerRateMultiplier>
 				</statOffsets>
 			</li>
 		</stages>

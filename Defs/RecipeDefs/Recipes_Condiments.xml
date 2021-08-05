@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<RecipeDef>
@@ -12,8 +12,8 @@
 		<workAmount>200</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>VCE_CondimentPrepTable</li>	  
-		</recipeUsers>	
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -37,14 +37,63 @@
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
-			<thingDefs>	
-				<li>Beer</li>								
+			<thingDefs>
+				<li>Beer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MC_BloodInfusedSauce>10</MC_BloodInfusedSauce>
 		</products>
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MC_BrothSimple</defName>
+		<label>cook simple broth</label>
+		<description>Cook simple broth from one ingredient.</description>
+		<jobString>Cooking simple broth.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>5.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSimple>5</MealSimple>
+			<MC_BrothSimple>5</MC_BrothSimple>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
 	</RecipeDef>
 
 </Defs>

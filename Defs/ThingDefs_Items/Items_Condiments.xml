@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>  
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
 
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>MC_BloodInfusedSauce</defName>
@@ -30,9 +30,9 @@
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<ingredient>
-		  <mergeCompatibilityTags>
-			<li>Condiments</li>
-		  </mergeCompatibilityTags>
+			<mergeCompatibilityTags>
+				<li>Condiments</li>
+			</mergeCompatibilityTags>
 		</ingredient>
 	</ThingDef>
 

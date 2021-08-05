@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ======= Ingredient based thoughts ========= -->
 
-	<ThoughtDef>	
+	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<hediff>MC_ConsumedBloodInfusedSauce</hediff>
 		<defName>MC_ConsumedBloodInfusedSauce</defName>
@@ -14,7 +14,7 @@
 				<description>That was pretty tasty, but I don't feel like eating for a while.</description>
 				<baseMoodEffect>1</baseMoodEffect>
 			</li>
-		</stages>	
+		</stages>
 	</ThoughtDef>
 
 </Defs>
