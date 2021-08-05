@@ -36,26 +36,6 @@
 		</ingredient>
 	</ThingDef>
 
-	<ThingDef ParentName="MealCooked">
-		<defName>MC_MeatCooked</defName>
-		<label>cooked meat</label>
-		<description>Some chunks of meat that were cooked in broth.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Kibble</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(170,30,30)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>0.9</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealSimple</preferability>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-		</ingestible>
-	</ThingDef>
-
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>MC_BrothSimple</defName>
 		<label>simple meat broth</label>
