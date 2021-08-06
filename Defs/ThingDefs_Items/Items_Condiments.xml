@@ -46,12 +46,67 @@
 		<description>Simple meat broth. Tastes quite decent. Slightly affects the body's blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Milk</texPath>
-			<color>(243,210,114)</color>
+			<color>(170,30,30)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>MC_ConsumedBrothSimple</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_BrothFine</defName>
+		<label>fine meat broth</label>
+		<description>Fine meat broth. Tastes pretty good. Slightly affects the body's blood pressure.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Milk</texPath>
+			<color>(243,210,114)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedBrothFine</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_BrothLavish</defName>
+		<label>lavish meat broth</label>
+		<description>Lavish meat broth. Tastes very good. Slightly affects the body's blood pressure, but it's quite healthy for the immune system.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Tea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(170,30,30)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedBrothLavish</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_BrothGourmet</defName>
+		<label>gourmet meat broth</label>
+		<description>Gourmet meat broth. Tastes insanely good. Slightly affects the body's blood pressure, but it's quite healthy for the immune system and very nourishing.</description>
+		<statBases>
+			<MarketValue>2.64</MarketValue>
+			<Nutrition>0.5</Nutrition>
+			<Flammability>1.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Drug/Tea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(243,210,114)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedBrothGourmet</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 	</ThingDef>

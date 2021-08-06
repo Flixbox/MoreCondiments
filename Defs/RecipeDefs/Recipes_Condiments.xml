@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<RecipeDef>
-		<defName>MC_BloodInfusedSauce</defName>
-		<label>make blood infused sauce</label>
-		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while. The alcohol evaporates in the process.</description>
-		<jobString>Making blood infused sauce.</jobString>
+	<RecipeDef Name="MC_Recipe_CondimentBase" Abstract="True">
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -14,6 +10,14 @@
 		<recipeUsers>
 			<li>VCE_CondimentPrepTable</li>
 		</recipeUsers>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MC_Recipe_CondimentBase">
+		<defName>MC_BloodInfusedSauce</defName>
+		<label>make blood infused sauce</label>
+		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while. The alcohol evaporates in the process.</description>
+		<jobString>Making blood infused sauce.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -44,7 +48,6 @@
 		<products>
 			<MC_BloodInfusedSauce>10</MC_BloodInfusedSauce>
 		</products>
-		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>

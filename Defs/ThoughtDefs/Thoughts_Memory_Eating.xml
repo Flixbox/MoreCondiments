@@ -60,6 +60,7 @@
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>MC_ConsumedBrothLavish</defName>
+		<hediff>MC_ConsumedBrothLavish</hediff>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
