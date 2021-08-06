@@ -39,7 +39,7 @@
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>MC_BrothSimple</defName>
 		<label>simple meat broth</label>
-		<description>Simple meat broth. Tastes quite decent.</description>
+		<description>Simple meat broth. Tastes quite decent. Slightly affects the body's blood pressure.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Milk</texPath>
 			<color>(243,210,114)</color>
