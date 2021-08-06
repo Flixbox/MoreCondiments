@@ -13,9 +13,6 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>VCE_Condiments</li>
-		</thingCategories>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li>Condiments</li>
@@ -37,6 +34,9 @@
 			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">

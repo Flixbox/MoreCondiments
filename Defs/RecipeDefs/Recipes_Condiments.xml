@@ -52,7 +52,7 @@
 
 	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
 		<workAmount>1000</workAmount>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
 		<workSkill>Cooking</workSkill>
 		<defaultIngredientFilter>
 			<categories>
@@ -89,6 +89,7 @@
 			<MC_BrothSimple>10</MC_BrothSimple>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs></thingDefs>
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
@@ -121,6 +122,15 @@
 				<count>2.0</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs></thingDefs>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
 		<products>
 			<MealFine_Meat>2</MealFine_Meat>
 			<MC_BrothFine>10</MC_BrothFine>
@@ -154,6 +164,15 @@
 				<count>3.0</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs></thingDefs>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
 		<products>
 			<MealFine_Meat>2</MealFine_Meat>
 			<MC_BrothLavish>10</MC_BrothLavish>
@@ -186,6 +205,15 @@
 				<count>2.0</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs></thingDefs>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
 		<products>
 			<MealFine_Meat>1</MealFine_Meat>
 			<MC_BrothGourmet>5</MC_BrothGourmet>
