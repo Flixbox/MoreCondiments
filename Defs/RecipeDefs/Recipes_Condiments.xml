@@ -175,7 +175,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine_Meat>2</MealFine_Meat>
+			<MealFine>2</MealFine>
 			<MC_BrothLavish>10</MC_BrothLavish>
 		</products>
 		<skillRequirements>
@@ -216,7 +216,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine_Meat>1</MealFine_Meat>
+			<MealFine>1</MealFine>
 			<MC_BrothGourmet>5</MC_BrothGourmet>
 		</products>
 		<skillRequirements>
