@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="RoughPlantBase">
-		<defName>MC_BloodInfusedSauce</defName>
-		<label>blood-infused sauce</label>
-		<description>A thick sauce infused with alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
-		<graphicData>
-			<texPath>Things/Item/Drug/Beer</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(170,30,30)</color>
-		</graphicData>
+	<ThingDef ParentName="RoughPlantBase" Name="MC_CondimentBase" Abstract="True">
 		<statBases>
-			<MarketValue>2.64</MarketValue>
+			<MarketValue>1.32</MarketValue>
 			<Nutrition>0.05</Nutrition>
 			<Flammability>1.1</Flammability>
 		</statBases>
@@ -24,11 +16,6 @@
 		<thingCategories>
 			<li>VCE_Condiments</li>
 		</thingCategories>
-		<ingestible>
-			<preferability>NeverForNutrition</preferability>
-			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
-			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
-		</ingestible>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li>Condiments</li>
@@ -36,7 +23,24 @@
 		</ingredient>
 	</ThingDef>
 
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_BloodInfusedSauce</defName>
+		<label>blood-infused sauce</label>
+		<description>A thick sauce infused with alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Beer</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(170,30,30)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothSimple</defName>
 		<label>simple meat broth</label>
 		<description>Simple meat broth. Tastes quite decent. Slightly affects the body's blood pressure.</description>
@@ -45,29 +49,11 @@
 			<color>(243,210,114)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-		<statBases>
-			<MarketValue>1.32</MarketValue>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>VCE_Condiments</li>
-		</thingCategories>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>MC_ConsumedBrothSimple</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li>Condiments</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 	</ThingDef>
 
 </Defs>

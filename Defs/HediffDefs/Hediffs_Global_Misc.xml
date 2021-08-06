@@ -43,7 +43,7 @@
 		<comps>
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
-					<li>MC_ConsumedGourmetBroth</li>
+					<li>MC_ConsumedBrothGourmet</li>
 				</thoughtDefs>
 			</li>
 		</comps>
