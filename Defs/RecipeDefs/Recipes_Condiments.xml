@@ -55,6 +55,7 @@
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
 		<workSkill>Cooking</workSkill>
 		<defaultIngredientFilter>
+			<thingDefs></thingDefs>
 			<categories>
 				<li>FoodRaw</li>
 			</categories>
@@ -102,7 +103,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_BrothFine</defName>
 		<label>cook fine broth</label>
-		<description>Cook a somewhat complex broth from several ingredients.</description>
+		<description>Cook some somewhat complex broth from several ingredients.</description>
 		<jobString>Cooking fine broth.</jobString>
 		<ingredients>
 			<li>
@@ -144,7 +145,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_BrothLavish</defName>
 		<label>cook lavish broth</label>
-		<description>Cook a very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.</description>
+		<description>Cook some very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.</description>
 		<jobString>Cooking lavish broth.</jobString>
 		<ingredients>
 			<li>
@@ -185,7 +186,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_BrothGourmet</defName>
 		<label>cook gourmet broth</label>
-		<description>Cook a gourmet broth that severely improves any food it comes into contact with.</description>
+		<description>Cook some gourmet broth that severely improves any food it comes into contact with.</description>
 		<jobString>Cooking gourmet broth.</jobString>
 		<ingredients>
 			<li>
