@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ThingCategoryDef>
+    <defName>MC_Broth</defName>
+    <label>broth</label>
+    <parent>VCE_Condiments</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>Things/Item/Resource/Wort</iconPath>
+  </ThingCategoryDef>
+
+
+</Defs>

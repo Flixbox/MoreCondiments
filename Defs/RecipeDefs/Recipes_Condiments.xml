@@ -50,21 +50,17 @@
 		</products>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
+		<workAmount>1000</workAmount>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_BrothSimple</defName>
 		<label>cook simple meat broth</label>
 		<description>Cook some simple meat broth from one ingredient.</description>
 		<jobString>Cooking simple meat broth.</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>1000</workAmount>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_CondimentPrepTable</li>
-		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -94,8 +90,42 @@
 				<li>InsectJelly</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
-		<workSkill>Cooking</workSkill>
-		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MC_Recipe_BrothBase">
+		<defName>MC_BrothFine</defName>
+		<label>cook fine broth</label>
+		<description>Cook some fine broth from one ingredient.</description>
+		<jobString>Cooking fine broth.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>3.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MC_MeatCooked>5</MC_MeatCooked>
+			<MC_BrothSimple>5</MC_BrothSimple>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 	</RecipeDef>
 
 </Defs>

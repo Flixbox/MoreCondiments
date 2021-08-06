@@ -37,7 +37,6 @@
 			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
-
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
@@ -54,6 +53,9 @@
 			<specialThoughtAsIngredient>MC_ConsumedBrothSimple</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MC_Broth</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
@@ -61,7 +63,7 @@
 		<label>fine meat broth</label>
 		<description>Fine meat broth. Tastes pretty good. Slightly affects the body's blood pressure.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Milk</texPath>
+			<texPath>Things/Item/Resource/Wort</texPath>
 			<color>(243,210,114)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -70,6 +72,9 @@
 			<specialThoughtAsIngredient>MC_ConsumedBrothFine</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MC_Broth</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
@@ -87,6 +92,9 @@
 			<specialThoughtAsIngredient>MC_ConsumedBrothLavish</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MC_Broth</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
@@ -109,6 +117,9 @@
 			<specialThoughtAsIngredient>MC_ConsumedBrothGourmet</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MC_Broth</li>
+		</thingCategories>
 	</ThingDef>
 
 </Defs>
