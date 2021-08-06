@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rim of Madness - Bones</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName = "MC_BrothLavish"]/ingredients</xpath>
+                    <value>
+                        <li>
+                            <filter>
+                                <thingDefs>
+                                    <li>BoneItem</li>
+                                </thingDefs>
+                            </filter>
+                            <count>40</count>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName = "MC_BrothLavish"]/products</xpath>
+                    <value>
+                        <ROMB_Marrow>10</ROMB_Marrow>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName = "MC_BrothGourmet"]/ingredients</xpath>
+                    <value>
+                        <li>
+                            <filter>
+                                <thingDefs>
+                                    <li>BoneItem</li>
+                                </thingDefs>
+                            </filter>
+                            <count>20</count>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName = "MC_BrothGourmet"]/products</xpath>
+                    <value>
+                        <ROMB_Marrow>5</ROMB_Marrow>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

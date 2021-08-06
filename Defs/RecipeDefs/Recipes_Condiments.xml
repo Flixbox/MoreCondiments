@@ -54,6 +54,19 @@
 		<workAmount>1000</workAmount>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workSkill>Cooking</workSkill>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
@@ -72,30 +85,23 @@
 			</li>
 		</ingredients>
 		<products>
-			<MC_MeatCooked>5</MC_MeatCooked>
-			<MC_BrothSimple>5</MC_BrothSimple>
+			<MealFine_Meat>2</MealFine_Meat>
+			<MC_BrothSimple>10</MC_BrothSimple>
 		</products>
 		<fixedIngredientFilter>
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
 		</fixedIngredientFilter>
-		<defaultIngredientFilter>
-			<categories>
-				<li>MeatRaw</li>
-			</categories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-			</disallowedThingDefs>
-		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_BrothFine</defName>
 		<label>cook fine broth</label>
-		<description>Cook some fine broth from one ingredient.</description>
+		<description>Cook a somewhat complex broth from several ingredients.</description>
 		<jobString>Cooking fine broth.</jobString>
 		<ingredients>
 			<li>
@@ -106,26 +112,87 @@
 				</filter>
 				<count>3.0</count>
 			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
 		</ingredients>
 		<products>
-			<MC_MeatCooked>5</MC_MeatCooked>
-			<MC_BrothSimple>5</MC_BrothSimple>
+			<MealFine_Meat>2</MealFine_Meat>
+			<MC_BrothFine>10</MC_BrothFine>
 		</products>
-		<fixedIngredientFilter>
-			<categories>
-				<li>MeatRaw</li>
-			</categories>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>
-			<categories>
-				<li>MeatRaw</li>
-			</categories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-			</disallowedThingDefs>
-		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="MC_Recipe_BrothBase">
+		<defName>MC_BrothLavish</defName>
+		<label>cook lavish broth</label>
+		<description>Cook a very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.</description>
+		<jobString>Cooking lavish broth.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>4.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>3.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealFine_Meat>2</MealFine_Meat>
+			<MC_BrothLavish>10</MC_BrothLavish>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MC_Recipe_BrothBase">
+		<defName>MC_BrothGourmet</defName>
+		<label>cook gourmet broth</label>
+		<description>Cook a gourmet broth that severely improves any food it comes into contact with.</description>
+		<jobString>Cooking gourmet broth.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>3.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealFine_Meat>1</MealFine_Meat>
+			<MC_BrothGourmet>5</MC_BrothGourmet>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
 	</RecipeDef>
 
 </Defs>
