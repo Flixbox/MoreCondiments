@@ -4,11 +4,12 @@
     <ThingDef ParentName="MealCooked">
         <defName>MC_MeatCooked</defName>
         <label>cooked meat</label>
-        <description>Some chunks of meat that were cooked in broth.</description>
+        <description>Some chunks of meat that were cooked in broth. A simplistic and filling meal.</description>
         <graphicData>
             <texPath>Things/Item/Resource/Kibble</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
             <color>(170,30,30)</color>
+            <drawSize>0.8</drawSize>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
             <MarketValue>15</MarketValue>
@@ -18,6 +19,8 @@
             <preferability>MealSimple</preferability>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
+            <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+            <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
         </ingestible>
     </ThingDef>
 

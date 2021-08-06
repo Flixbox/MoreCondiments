@@ -42,8 +42,8 @@
 		<description>Simple meat broth. Tastes quite decent.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Milk</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(170,30,30)</color>
+			<color>(243,210,114)</color>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.32</MarketValue>
@@ -60,7 +60,7 @@
 		</thingCategories>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
-			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
+			<specialThoughtAsIngredient>MC_ConsumedBrothSimple</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<ingredient>
