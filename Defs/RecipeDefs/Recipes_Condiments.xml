@@ -50,6 +50,31 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef ParentName="MC_Recipe_CondimentBase">
+		<defName>MC_Starch</defName>
+		<label>make corn starch</label>
+		<description>Create corn starch. High-amylose corn starch decreases blood glucose and insulin response and increases satiety, or how long someone feels full after eating.</description>
+		<jobString>Making corn starch.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Corn</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Corn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MC_Starch>10</MC_Starch>
+		</products>
+	</RecipeDef>
+
 	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
 		<workAmount>1000</workAmount>
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>

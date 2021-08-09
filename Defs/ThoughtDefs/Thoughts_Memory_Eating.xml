@@ -12,6 +12,20 @@
 			<li>
 				<label>consumed blood infused sauce</label>
 				<description>That was pretty tasty, but I don't feel like eating for a while.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>MC_ConsumedStarch</hediff>
+		<defName>MC_ConsumedStarch</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed starch</label>
+				<description>That starch was really filling.</description>
 				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 		</stages>
