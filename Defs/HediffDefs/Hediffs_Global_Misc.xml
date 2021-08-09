@@ -33,7 +33,7 @@
 		<defName>MC_ConsumedStarch</defName>
 		<label>consumed starch (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Thick corn starch reduces hunger rate by 50% for about a day.</description>
+		<description>Thick corn starch reduces hunger rate by 50% for about a day. It is also is easily converted into energy by the body, which results in a nice burst of energy. It increases moving stat by 10% for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -52,6 +52,14 @@
 				<statOffsets>
 					<HungerRateMultiplier>-0.50</HungerRateMultiplier>
 				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
