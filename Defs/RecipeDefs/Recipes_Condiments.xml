@@ -59,7 +59,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Corn</li>
+						<li>RawCorn</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -67,7 +67,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Corn</li>
+				<li>RawCorn</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

@@ -52,8 +52,6 @@
 				<statOffsets>
 					<HungerRateMultiplier>-0.50</HungerRateMultiplier>
 				</statOffsets>
-			</li>
-			<li>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
