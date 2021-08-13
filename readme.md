@@ -5,4 +5,7 @@
 - Slight alcohol effect for blood wine
 - honeyed sauce
 - Umami sauce
-- Corn starch
+- sweet onion sauce
+- Curry sauce (Spice + Mayo?)
+- Sour Cream
+- Salsa (Makes u Flirty + Heat)
