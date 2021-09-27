@@ -11,14 +11,16 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/RecipeDef[defName = "MC_BrothLavish"]/ingredients</xpath>
                     <value>
-                        <li>
-                            <filter>
-                                <thingDefs>
-                                    <li>BoneItem</li>
-                                </thingDefs>
-                            </filter>
-                            <count>40</count>
-                        </li>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>BoneItem</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>40</count>
+                            </li>
+                        </ingredients>
                     </value>
                 </li>
 
@@ -32,7 +34,9 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/RecipeDef[defName = "MC_BrothLavish"]/fixedIngredientFilter/thingDefs</xpath>
                     <value>
-                        <li>BoneItem</li>
+                        <thingDefs>
+                            <li>BoneItem</li>
+                        </thingDefs>
                     </value>
                 </li>
 
@@ -40,14 +44,16 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/RecipeDef[defName = "MC_BrothGourmet"]/ingredients</xpath>
                     <value>
-                        <li>
-                            <filter>
-                                <thingDefs>
-                                    <li>BoneItem</li>
-                                </thingDefs>
-                            </filter>
-                            <count>20</count>
-                        </li>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>BoneItem</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>20</count>
+                            </li>
+                        </ingredients>
                     </value>
                 </li>
 
@@ -61,14 +67,18 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/RecipeDef[defName = "MC_BrothGourmet"]/fixedIngredientFilter/thingDefs</xpath>
                     <value>
-                        <li>BoneItem</li>
+                        <thingDefs>
+                            <li>BoneItem</li>
+                        </thingDefs>
                     </value>
                 </li>
 
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/RecipeDef[@Name = "MC_Recipe_BrothBase"]/defaultIngredientFilter/thingDefs</xpath>
                     <value>
-                        <li>BoneItem</li>
+                        <thingDefs>
+                            <li>BoneItem</li>
+                        </thingDefs>
                     </value>
                 </li>
 

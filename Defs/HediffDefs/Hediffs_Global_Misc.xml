@@ -83,7 +83,17 @@
 		<stages>
 			<li>
 				<statOffsets>
+					<MoveSpeed>0.05</MoveSpeed>
+					<MentalBreakThreshold>-0.01</MentalBreakThreshold>
+					<PsychicSensitivity>0.05</PsychicSensitivity>
+					<ToxicSensitivity>-0.05</ToxicSensitivity>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<HungerRateMultiplier>-0.15</HungerRateMultiplier>
+					<RestRateMultiplier>0.1</RestRateMultiplier>
+					<ComfyTemperatureMin>-2</ComfyTemperatureMin>
+					<ComfyTemperatureMax>2</ComfyTemperatureMax>
 					<ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+					<ResearchSpeed>0.05</ResearchSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -114,7 +124,7 @@
 					<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 					<PsychicSensitivity>0.1</PsychicSensitivity>
 					<ToxicSensitivity>-0.1</ToxicSensitivity>
-					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<GlobalLearningFactor>0.2</GlobalLearningFactor>
 					<HungerRateMultiplier>-0.30</HungerRateMultiplier>
 					<RestRateMultiplier>0.1</RestRateMultiplier>
 					<EatingSpeed>0.1</EatingSpeed>
@@ -125,6 +135,7 @@
 					<CarryingCapacity>10</CarryingCapacity>
 					<PainShockThreshold>-0.01</PainShockThreshold>
 					<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
+					<ResearchSpeed>0.1</ResearchSpeed>
 				</statOffsets>
 			</li>
 		</stages>

@@ -100,7 +100,7 @@
 	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothLavish</defName>
 		<label>lavish meat broth</label>
-		<description>Lavish meat broth. Tastes very good. Slightly affects the body's blood pressure, but it's quite healthy for the immune system.</description>
+		<description>Lavish meat broth. Tastes very good. Slightly affects the body's blood pressure, but it increases many stats.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Tea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -120,7 +120,7 @@
 	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothGourmet</defName>
 		<label>gourmet meat broth</label>
-		<description>Gourmet meat broth. Tastes insanely good. Slightly affects the body's blood pressure, but it's quite healthy for the immune system and very nourishing.</description>
+		<description>Gourmet meat broth. Tastes insanely good. Slightly affects the body's blood pressure, but it slightly boosts most stats.</description>
 		<statBases>
 			<MarketValue>2.64</MarketValue>
 			<Nutrition>0.5</Nutrition>
