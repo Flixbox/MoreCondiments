@@ -93,7 +93,7 @@
 		<defName>MC_ConsumedBrothGourmet</defName>
 		<label>consumed gourmet meat broth (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Gourmet broth reduces hunger rate by 30% for about a day. It's also quite healthy.</description>
+		<description>Gourmet broth reduces hunger rate by 30% for about a day. It's also quite healthy and can cause artistic feats only possible by the most elite craftsmen.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -105,6 +105,14 @@
 				<thoughtDefs>
 					<li>MC_ConsumedBrothGourmet</li>
 				</thoughtDefs>
+			</li>
+			<li Class="CF.HediffCompProperties_CraftedQualityOffset">
+				<stages>
+					<li>
+						<offset>1</offset>
+					</li>
+				</stages>
+				<percentChance>0.2</percentChance>
 			</li>
 		</comps>
 		<stages>

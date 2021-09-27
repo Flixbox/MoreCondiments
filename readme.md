@@ -10,3 +10,5 @@
 - Salsa (Makes u Flirty + Heat)
 - mustard sauce (Mood boost, energy boost (manipulation + movement))
 - Cheese sauce (very filling)
+- Jam (Patch for Jammy & other jam related mods)
+- Dextrose (<ResearchSpeed>0.2</ResearchSpeed>)

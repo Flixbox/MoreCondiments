@@ -16,11 +16,18 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2134308519</steamWorkshopUrl>
 			<downloadUrl>https://steamcommunity.com/workshop/filedetails/?id=2134308519</downloadUrl>
 		</li>
+		<li>
+			<packageId>isorex.communityframework</packageId>
+			<displayName>Community Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2585162118</steamWorkshopUrl>
+			<downloadUrl>https://steamcommunity.com/workshop/filedetails/?id=2585162118</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>VanillaExpanded.VCookE</li>
 		<li>VanillaExpanded.VBrewE</li>
 		<li>TrahsPanda.Blood</li>
 		<li>sihv.rombones</li>
+		<li>isorex.communityframework</li>
 	</loadAfter>
 </ModMetaData>
