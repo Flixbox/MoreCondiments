@@ -147,6 +147,14 @@
 				</filter>
 				<count>2.0</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawSpices</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs></thingDefs>
@@ -170,7 +178,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_Recipe_BrothLavish</defName>
 		<label>cook lavish broth</label>
-		<description>Cook some very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.</description>
+		<description>Cook some very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.  Its flavour slightly enhances a few stats.</description>
 		<jobString>Cooking lavish broth.</jobString>
 		<ingredients>
 			<li>
@@ -192,7 +200,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MC_Starch</li>
+						<li>VCE_RawSpices</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -200,7 +208,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>VCE_RawSpices</li>
+						<li>VCE_Salt</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -227,7 +235,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_Recipe_BrothGourmet</defName>
 		<label>cook gourmet broth</label>
-		<description>Cook a little bit of gourmet broth that severely improves any food it comes into contact with.</description>
+		<description>Cook a little bit of gourmet broth that severely improves any food it comes into contact with. Its flavour drastically enhances various stats.</description>
 		<jobString>Cooking gourmet broth.</jobString>
 		<ingredients>
 			<li>
@@ -262,6 +270,22 @@
 				</filter>
 				<count>5</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Salt</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs></thingDefs>
@@ -273,7 +297,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine>1</MealFine>
+			<MealFine>2</MealFine>
 			<MC_BrothGourmet>5</MC_BrothGourmet>
 		</products>
 		<skillRequirements>
