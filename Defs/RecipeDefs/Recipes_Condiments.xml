@@ -80,7 +80,12 @@
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
 		<workSkill>Cooking</workSkill>
 		<defaultIngredientFilter>
-			<thingDefs></thingDefs>
+			<thingDefs>
+				<li>VCE_Flour</li>
+				<li>VCE_Salt</li>
+				<li>VCE_RawSpices</li>
+				<li>MC_Starch</li>
+			</thingDefs>
 			<categories>
 				<li>FoodRaw</li>
 			</categories>
@@ -107,11 +112,11 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>3.0</count>
+				<count>1.0</count>
 			</li>
 		</ingredients>
 		<products>
-			<MealFine_Meat>2</MealFine_Meat>
+			<MealFine_Meat>1</MealFine_Meat>
 			<MC_BrothSimple>10</MC_BrothSimple>
 		</products>
 		<fixedIngredientFilter>
@@ -137,7 +142,7 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>3.0</count>
+				<count>1.0</count>
 			</li>
 			<li>
 				<filter>
@@ -145,7 +150,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>2.0</count>
+				<count>1.0</count>
 			</li>
 			<li>
 				<filter>
@@ -166,7 +171,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine_Meat>2</MealFine_Meat>
+			<MealFine_Meat>1</MealFine_Meat>
 			<MC_BrothFine>10</MC_BrothFine>
 		</products>
 		<skillRequirements>
@@ -187,7 +192,7 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>4.0</count>
+				<count>2.0</count>
 			</li>
 			<li>
 				<filter>
@@ -195,7 +200,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>3.0</count>
+				<count>2.0</count>
 			</li>
 			<li>
 				<filter>
@@ -224,7 +229,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine>2</MealFine>
+			<MealFine>1</MealFine>
 			<MC_BrothLavish>10</MC_BrothLavish>
 		</products>
 		<skillRequirements>
@@ -244,7 +249,7 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>4.0</count>
+				<count>2.0</count>
 			</li>
 			<li>
 				<filter>
@@ -252,7 +257,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>3.0</count>
+				<count>2.0</count>
 			</li>
 			<li>
 				<filter>
@@ -297,7 +302,7 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<MealFine>2</MealFine>
+			<MealFine>1</MealFine>
 			<MC_BrothGourmet>5</MC_BrothGourmet>
 		</products>
 		<skillRequirements>
