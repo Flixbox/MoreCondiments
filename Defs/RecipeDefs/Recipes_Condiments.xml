@@ -189,6 +189,22 @@
 				</filter>
 				<count>3.0</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MC_Starch</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawSpices</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs></thingDefs>
@@ -211,7 +227,7 @@
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
 		<defName>MC_Recipe_BrothGourmet</defName>
 		<label>cook gourmet broth</label>
-		<description>Cook some gourmet broth that severely improves any food it comes into contact with.</description>
+		<description>Cook a little bit of gourmet broth that severely improves any food it comes into contact with.</description>
 		<jobString>Cooking gourmet broth.</jobString>
 		<ingredients>
 			<li>
@@ -220,7 +236,7 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>3.0</count>
+				<count>4.0</count>
 			</li>
 			<li>
 				<filter>
@@ -228,7 +244,23 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>2.0</count>
+				<count>3.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MC_Starch</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawSpices</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
