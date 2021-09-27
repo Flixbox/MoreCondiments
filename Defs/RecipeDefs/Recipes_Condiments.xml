@@ -96,7 +96,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
-		<defName>MC_BrothSimple</defName>
+		<defName>MC_Recipe_BrothSimple</defName>
 		<label>cook simple meat broth</label>
 		<description>Cook some simple meat broth from one ingredient.</description>
 		<jobString>Cooking simple meat broth.</jobString>
@@ -126,7 +126,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
-		<defName>MC_BrothFine</defName>
+		<defName>MC_Recipe_BrothFine</defName>
 		<label>cook fine broth</label>
 		<description>Cook some somewhat complex broth from several ingredients.</description>
 		<jobString>Cooking fine broth.</jobString>
@@ -168,7 +168,7 @@
 
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
-		<defName>MC_BrothLavish</defName>
+		<defName>MC_Recipe_BrothLavish</defName>
 		<label>cook lavish broth</label>
 		<description>Cook some very complex broth from various ingredients. Much of the ingredients are wasted in order to create a broth that improves any food it comes into contact with.</description>
 		<jobString>Cooking lavish broth.</jobString>
@@ -209,7 +209,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="MC_Recipe_BrothBase">
-		<defName>MC_BrothGourmet</defName>
+		<defName>MC_Recipe_BrothGourmet</defName>
 		<label>cook gourmet broth</label>
 		<description>Cook some gourmet broth that severely improves any food it comes into contact with.</description>
 		<jobString>Cooking gourmet broth.</jobString>
