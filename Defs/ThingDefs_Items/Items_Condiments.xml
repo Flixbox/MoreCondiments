@@ -64,9 +64,10 @@
 		<label>simple meat broth</label>
 		<description>Simple meat broth. Tastes quite decent. Slightly affects the body's blood pressure.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Milk</texPath>
-			<color>(170,30,30)</color>
-			<drawSize>0.8</drawSize>
+			<texPath>Things/Item/Drug/Tea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(238,91,91)</color>
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
@@ -81,11 +82,12 @@
 	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothFine</defName>
 		<label>fine meat broth</label>
-		<description>Fine meat broth. Tastes pretty good. Slightly affects the body's blood pressure.</description>
+		<description>Fine meat and vegetable broth. Tastes pretty good. Slightly affects the body's blood pressure.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Wort</texPath>
-			<color>(243,210,114)</color>
-			<drawSize>0.8</drawSize>
+			<texPath>Things/Item/Drug/Tea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(127,199,158)</color>
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
@@ -105,7 +107,7 @@
 			<texPath>Things/Item/Drug/Tea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>0.90</drawSize>
-			<color>(170,30,30)</color>
+			<color>(180,127,199)</color>
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
@@ -130,7 +132,7 @@
 			<texPath>Things/Item/Drug/Tea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>0.90</drawSize>
-			<color>(243,210,114)</color>
+			<color>(242,238,137)</color>
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
