@@ -20,6 +20,7 @@
 	<loadAfter>
 		<li>VanillaExpanded.VCookE</li>
 		<li>VanillaExpanded.VBrewE</li>
+		<li>vanillaexpanded.vplantse</li>
 		<li>TrahsPanda.Blood</li>
 		<li>sihv.rombones</li>
 	</loadAfter>
