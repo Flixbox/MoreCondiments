@@ -136,6 +136,8 @@
 					<PainShockThreshold>-0.01</PainShockThreshold>
 					<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
 					<ResearchSpeed>0.1</ResearchSpeed>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+					<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
 				</statOffsets>
 			</li>
 		</stages>
