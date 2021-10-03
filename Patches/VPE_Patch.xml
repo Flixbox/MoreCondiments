@@ -9,7 +9,7 @@
             <operations>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "VCE_Tomato"]/sowTags</xpath>
+                    <xpath>/Defs/ThingDef[defName = "VCE_Tomato"]/plant/sowTags</xpath>
                     <value>
                         <li>Hydroponic</li>
                     </value>
