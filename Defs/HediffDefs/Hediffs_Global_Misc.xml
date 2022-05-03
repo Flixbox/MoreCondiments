@@ -63,6 +63,41 @@
 	</HediffDef>
 
 	<HediffDef>
+		<defName>MC_ConsumedAmbrosia</defName>
+		<label>consumed ambrosia sauce (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Ambrosia sauce enhances the user's mood by a lot.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>MC_ConsumedAmbrosia</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.20</HungerRateMultiplier>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.20</ImmunityGainSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>MC_ConsumedBrothLavish</defName>
 		<label>consumed lavish meat broth (from meal)</label>
 		<makesSickThought>false</makesSickThought>

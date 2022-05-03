@@ -75,6 +75,31 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef ParentName="MC_Recipe_CondimentBase">
+		<defName>MC_AmbrosiaSauce</defName>
+		<label>make ambrosia sauce</label>
+		<description>Create ambrosia sauce. It increases the user's mood by a lot and enhances a few stats. Ambrosia sauce is not addictive.</description>
+		<jobString>Making ambrosia.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ambrosia</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ambrosia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MC_AmbrosiaSauce>10</MC_Starch>
+		</products>
+	</RecipeDef>
+
 	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
 		<workAmount>1000</workAmount>
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>

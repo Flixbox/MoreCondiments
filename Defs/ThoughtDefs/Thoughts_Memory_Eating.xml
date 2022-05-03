@@ -33,6 +33,20 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>MC_ConsumedAmbrosia</hediff>
+		<defName>MC_ConsumedAmbrosia</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed ambrosia sauce</label>
+				<description>That ambrosia sauce was divine.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>MC_ConsumedBrothSimple</defName>
 		<durationDays>1</durationDays>
 		<stages>
@@ -59,7 +73,7 @@
 			<li>
 				<label>consumed fine broth</label>
 				<description>That was pretty tasty!</description>
-				<baseMoodEffect>3</baseMoodEffect>
+				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
 		<modExtensions>
@@ -80,7 +94,7 @@
 			<li>
 				<label>consumed lavish broth</label>
 				<description>That was incredibly tasty!</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 		<modExtensions>
