@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Bastyon</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[...?]</xpath>
+                    <value>
+                        <RecipeDef ParentName="MC_Recipe_CondimentBase">
+                            <defName>MC_AlluviumPaste</defName>
+                            <label>make alluvium paste</label>
+                            <description>Create alluvium paste. It's yummy and enhances immunity gain speed.</description>
+                            <jobString>Making alluvium paste.</jobString>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Bast_Alluvium_Jelly</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Bast_Alluvium_Jelly</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <MC_AlluviumPaste>10</MC_AlluviumPaste>
+                            </products>
+                        </RecipeDef>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
