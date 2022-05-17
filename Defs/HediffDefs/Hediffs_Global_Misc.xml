@@ -98,6 +98,41 @@
 	</HediffDef>
 
 	<HediffDef>
+		<defName>MC_ConsumedAlluvium</defName>
+		<label>consumed alluvium paste (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Alluvium paste enhances the user's mood and immunity gain speed.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>MC_ConsumedAlluvium</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.05</HungerRateMultiplier>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>MC_ConsumedBrothLavish</defName>
 		<label>consumed lavish meat broth (from meal)</label>
 		<makesSickThought>false</makesSickThought>
