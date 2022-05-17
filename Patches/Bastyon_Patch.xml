@@ -9,7 +9,7 @@
             <operations>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[...?]</xpath>
+                    <xpath>/Defs</xpath>
                     <value>
                         <RecipeDef ParentName="MC_Recipe_CondimentBase">
                             <defName>MC_AlluviumPaste</defName>
