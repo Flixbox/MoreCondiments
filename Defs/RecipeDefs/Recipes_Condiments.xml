@@ -96,7 +96,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<MC_AmbrosiaSauce>10</MC_Starch>
+			<MC_AmbrosiaSauce>10</MC_AmbrosiaSauce>
 		</products>
 	</RecipeDef>
 

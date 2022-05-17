@@ -68,12 +68,12 @@
 			<Nutrition>0</Nutrition>
 			<Flammability>1.1</Flammability>
 		</statBases>
-		<graphicData>
-			<texPath>Things/Item/Drug/Tea</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.90</drawSize>
-			<color>(255,255,60)</color>
-		</graphicData>
+<graphicData>
+	<texPath>Things/Item/Drug/Tea</texPath>
+	<graphicClass>Graphic_StackCount</graphicClass>
+	<drawSize>0.90</drawSize>
+	<color>(255,255,60)</color>
+</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 			<specialThoughtAsIngredient>MC_ConsumedAmbrosia</specialThoughtAsIngredient>
