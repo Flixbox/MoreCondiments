@@ -1,5 +1,9 @@
 # More Condiments
 
+Sprites can be created with: https://www.figma.com/community/file/1113814556145890138
+
+Thanks to CoMiGo!
+
 ## TODO
 
 - Slight alcohol effect for blood wine
