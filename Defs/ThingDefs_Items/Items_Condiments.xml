@@ -20,6 +20,21 @@
 		</ingredient>
 	</ThingDef>
 
+	<ThingDef ParentName="MC_CondimentBase" Name="MC_CondimentCraftableBase" Abstract="True">
+		<recipeMaker>
+			<workSkill>Cooking</workSkill>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<workAmount>200</workAmount>
+			<recipeUsers>
+				<li>VCE_CondimentPrepTable</li>
+			</recipeUsers>
+			<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+			<bulkRecipeCount>10</bulkRecipeCount>
+		</recipeMaker>
+	</ThingDef>
+
 	<ThingDef ParentName="MC_CondimentBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>MC_HemogenInfusedSauce</defName>
 		<label>hemogen-infused sauce</label>
@@ -47,9 +62,13 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+		<costList>
+			<Neutroamine>2</Neutroamine>
+			<Yayo>1</Yayo>
+		</costList>
 	</ThingDef>
 
-	<ThingDef ParentName="MC_CondimentBase">
+	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_Starch</defName>
 		<label>corn starch</label>
 		<description>High-amylose corn starch decreases blood glucose and insulin response and increases satiety, or how long someone feels full after eating.</description>
@@ -67,9 +86,12 @@
 		<thingCategories>
 			<li>VCE_Condiments</li>
 		</thingCategories>
+		<costList>
+			<RawCorn>1</RawCorn>
+		</costList>
 	</ThingDef>
 
-	<ThingDef ParentName="MC_CondimentBase">
+	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_AmbrosiaSauce</defName>
 		<label>ambrosia sauce</label>
 		<description>A divine sauce, enhancing flavour by quite a lot. Ambrosia sauce is not addictive.</description>
@@ -92,9 +114,12 @@
 		<thingCategories>
 			<li>VCE_Condiments</li>
 		</thingCategories>
+		<costList>
+			<Ambrosia>1</Ambrosia>
+		</costList>
 	</ThingDef>
 
-	<ThingDef ParentName="MC_CondimentBase">
+	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_Jam</defName>
 		<label>berry jam</label>
 		<description>A sweet paste, vibrant and fruity.</description>
@@ -117,6 +142,10 @@
 		<thingCategories>
 			<li>VCE_Condiments</li>
 		</thingCategories>
+		<costList>
+			<RawBerries>1</RawBerries>
+			<VCE_RawSugar>1</VCE_RawSugar>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
