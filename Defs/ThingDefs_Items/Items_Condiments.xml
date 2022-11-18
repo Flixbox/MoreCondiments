@@ -122,7 +122,7 @@
 	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_AmbrosiaSauce</defName>
 		<label>ambrosia sauce</label>
-		<description>A divine sauce, enhancing flavour by quite a lot. Ambrosia sauce is not addictive.</description>
+		<description>A divine sauce, enhancing flavour by quite a lot. Ambrosia sauce is not addictive when cooked into a meal.</description>
 		<statBases>
 			<MarketValue>3</MarketValue>
 			<Nutrition>0</Nutrition>
@@ -150,7 +150,7 @@
 	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_Jam</defName>
 		<label>berry jam</label>
-		<description>A sweet paste, vibrant and fruity.</description>
+		<description>A sweet paste, vibrant and fruity. Slightly improves movement speed.</description>
 		<statBases>
 			<MarketValue>3</MarketValue>
 			<Nutrition>0</Nutrition>
@@ -179,7 +179,7 @@
 	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_CondensedMilk</defName>
 		<label>condensed milk</label>
-		<description>A sweet milk that distracts from the woes of daily life.</description>
+		<description>A sweet milk that distracts from the woes of daily life. Slightly improves manipulation.</description>
 		<statBases>
 			<MarketValue>3</MarketValue>
 			<Nutrition>0</Nutrition>
