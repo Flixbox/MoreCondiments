@@ -49,9 +49,7 @@
 		</comps>
 		<stages>
 			<li>
-				<statOffsets>
-					<HungerRateMultiplier>-0.15</HungerRateMultiplier>
-				</statOffsets>
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -66,7 +64,7 @@
 		<defName>MC_ConsumedCondensedMilk</defName>
 		<label>consumed condensed milk (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Condensed milk increases movement by 10% for 24 hours.</description>
+		<description>Condensed milk increases manipulation by 10% for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -84,8 +82,8 @@
 			<li>
 				<capMods>
 					<li>
-						<capacity>Moving</capacity>
-						<offset>0.10</offset>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
 					</li>
 				</capMods>
 			</li>
@@ -112,9 +110,7 @@
 		</comps>
 		<stages>
 			<li>
-				<statOffsets>
-					<HungerRateMultiplier>-0.70</HungerRateMultiplier>
-				</statOffsets>
+				<hungerRateFactorOffset>-0.7</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -180,9 +176,7 @@
 		</comps>
 		<stages>
 			<li>
-				<statOffsets>
-					<HungerRateMultiplier>-0.05</HungerRateMultiplier>
-				</statOffsets>
+				<hungerRateFactorOffset>-0.05</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -213,13 +207,13 @@
 		</comps>
 		<stages>
 			<li>
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<statOffsets>
 					<MoveSpeed>0.05</MoveSpeed>
 					<MentalBreakThreshold>-0.01</MentalBreakThreshold>
 					<PsychicSensitivity>0.05</PsychicSensitivity>
-					<ToxicSensitivity>-0.05</ToxicSensitivity>
+					<ToxicEnvironmentResistance>0.05</ToxicEnvironmentResistance>
 					<GlobalLearningFactor>0.1</GlobalLearningFactor>
-					<HungerRateMultiplier>-0.15</HungerRateMultiplier>
 					<RestRateMultiplier>0.1</RestRateMultiplier>
 					<ComfyTemperatureMin>-2</ComfyTemperatureMin>
 					<ComfyTemperatureMax>2</ComfyTemperatureMax>
@@ -250,13 +244,13 @@
 		</comps>
 		<stages>
 			<li>
+				<hungerRateFactorOffset>-0.35</hungerRateFactorOffset>
 				<statOffsets>
 					<MoveSpeed>0.1</MoveSpeed>
 					<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 					<PsychicSensitivity>0.1</PsychicSensitivity>
-					<ToxicSensitivity>-0.1</ToxicSensitivity>
+					<ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
 					<GlobalLearningFactor>0.2</GlobalLearningFactor>
-					<HungerRateMultiplier>-0.30</HungerRateMultiplier>
 					<RestRateMultiplier>0.1</RestRateMultiplier>
 					<EatingSpeed>0.1</EatingSpeed>
 					<ComfyTemperatureMin>-5</ComfyTemperatureMin>
