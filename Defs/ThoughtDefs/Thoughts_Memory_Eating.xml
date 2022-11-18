@@ -33,6 +33,20 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>MC_ConsumedDextrose</hediff>
+		<defName>MC_ConsumedDextrose</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed dextrose</label>
+				<description>That dextrose was really tasty.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<hediff>MC_ConsumedAmbrosia</hediff>
 		<defName>MC_ConsumedAmbrosia</defName>
 		<durationDays>1</durationDays>

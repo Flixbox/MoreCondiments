@@ -11,4 +11,5 @@ Thanks to CoMiGo!
 - Salsa (Makes u Flirty + Heat)
 - mustard sauce (Mood boost, energy boost (manipulation + movement))
 - Dextrose (<ResearchSpeed>0.2</ResearchSpeed>)
-- Citrus juice
+- carrot sauce (vision)
+- essence of iron skin (armour) - needs creativity

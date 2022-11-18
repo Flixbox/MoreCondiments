@@ -92,6 +92,34 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentCraftableBase">
+		<defName>MC_Dextrose</defName>
+		<label>dextrose</label>
+		<description>A sweet condiment that provides energy and focus.</description>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Nutrition>0</Nutrition>
+			<Flammability>1.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Drug/Yayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(255,51,255)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedDextrose</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<costList>
+			<MC_Starch>1</MC_Starch>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentCraftableBase">
 		<defName>MC_AmbrosiaSauce</defName>
 		<label>ambrosia sauce</label>
 		<description>A divine sauce, enhancing flavour by quite a lot. Ambrosia sauce is not addictive.</description>

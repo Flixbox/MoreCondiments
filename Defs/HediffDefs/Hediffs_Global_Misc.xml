@@ -33,7 +33,7 @@
 		<defName>MC_ConsumedStarch</defName>
 		<label>consumed starch (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Thick corn starch reduces hunger rate by 15% for 24 hours. It is also is easily converted into energy by the body, which results in a nice burst of energy. It increases moving stat by 10% for 24 hours.</description>
+		<description>Thick corn starch reduces hunger rate by 15% for 24 hours. It is also is easily converted into energy by the body, which results in a nice burst of energy.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -56,6 +56,44 @@
 						<offset>0.10</offset>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>MC_ConsumedDextrose</defName>
+		<label>consumed dextrose (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Dextrose is easily converted into energy by the body, which results in a nice burst of energy and focus.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>MC_ConsumedDextrose</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ResearchSpeed>0.6</ResearchSpeed>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
@@ -142,7 +180,6 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<HungerRateMultiplier>-0.20</HungerRateMultiplier>
 					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 					<ImmunityGainSpeed>0.20</ImmunityGainSpeed>
 				</statOffsets>
@@ -218,7 +255,7 @@
 					<ComfyTemperatureMin>-2</ComfyTemperatureMin>
 					<ComfyTemperatureMax>2</ComfyTemperatureMax>
 					<ImmunityGainSpeed>0.10</ImmunityGainSpeed>
-					<ResearchSpeed>0.05</ResearchSpeed>
+					<ResearchSpeed>0.2</ResearchSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -260,7 +297,7 @@
 					<CarryingCapacity>10</CarryingCapacity>
 					<PainShockThreshold>-0.01</PainShockThreshold>
 					<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
-					<ResearchSpeed>0.1</ResearchSpeed>
+					<ResearchSpeed>0.3</ResearchSpeed>
 					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 					<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
 				</statOffsets>
