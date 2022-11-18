@@ -5,12 +5,12 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
-		<hediff>MC_ConsumedBloodInfusedSauce</hediff>
-		<defName>MC_ConsumedBloodInfusedSauce</defName>
+		<hediff>MC_ConsumedHemogenInfusedSauce</hediff>
+		<defName>MC_ConsumedHemogenInfusedSauce</defName>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
-				<label>consumed blood infused sauce</label>
+				<label>consumed hemogen infused sauce</label>
 				<description>That was pretty tasty, but I don't feel like eating for a while.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
@@ -47,13 +47,13 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
-		<hediff>MC_ConsumedAlluvium</hediff>
-		<defName>MC_ConsumedAlluvium</defName>
+		<hediff>MC_ConsumedJam</hediff>
+		<defName>MC_ConsumedJam</defName>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
-				<label>consumed alluvium paste</label>
-				<description>Yummy Alluvium paste!</description>
+				<label>consumed jam</label>
+				<description>Sweet and fruity!</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
@@ -70,13 +70,6 @@
 				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.0075</percentage>
-			</li>
-		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
@@ -90,13 +83,6 @@
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.0075</percentage>
-			</li>
-		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
@@ -111,13 +97,6 @@
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.0075</percentage>
-			</li>
-		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
@@ -132,13 +111,6 @@
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-				<partToAffect>Body</partToAffect>
-				<percentage>0.0075</percentage>
-			</li>
-		</modExtensions>
 	</ThoughtDef>
 
 

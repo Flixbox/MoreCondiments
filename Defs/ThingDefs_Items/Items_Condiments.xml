@@ -20,23 +20,33 @@
 		</ingredient>
 	</ThingDef>
 
-	<ThingDef ParentName="MC_CondimentBase">
-		<defName>MC_BloodInfusedSauce</defName>
-		<label>blood-infused sauce</label>
+	<ThingDef ParentName="MC_CondimentBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>MC_HemogenInfusedSauce</defName>
+		<label>hemogen-infused sauce</label>
 		<description>A thick sauce infused with alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Beer</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(170,30,30)</color>
 		</graphicData>
-		<ingestible>
-			<preferability>NeverForNutrition</preferability>
-			<specialThoughtAsIngredient>MC_ConsumedBloodInfusedSauce</specialThoughtAsIngredient>
-			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
-		</ingestible>
 		<thingCategories>
 			<li>VCE_Condiments</li>
 		</thingCategories>
+		<ingestible>
+			<foodType>Fluid</foodType>
+			<preferability>DesperateOnly</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedHemogenInfusedSauce</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<specialThoughtDirect>IngestedHemogenPack</specialThoughtDirect>
+			<ingestSound>HemogenPack_Consume</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetHemogen">
+					<offset>0.02</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
@@ -84,10 +94,10 @@
 		</thingCategories>
 	</ThingDef>
 
-		<ThingDef ParentName="MC_CondimentBase">
-		<defName>MC_AlluviumPaste</defName>
-		<label>alluvium paste</label>
-		<description>A yummy paste, vibrant and molasses-like.</description>
+	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_Jam</defName>
+		<label>berry jam</label>
+		<description>A sweet paste, vibrant and fruity.</description>
 		<statBases>
 			<MarketValue>3</MarketValue>
 			<Nutrition>0</Nutrition>
@@ -101,7 +111,7 @@
 		</graphicData>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
-			<specialThoughtAsIngredient>MC_ConsumedAlluvium</specialThoughtAsIngredient>
+			<specialThoughtAsIngredient>MC_ConsumedJam</specialThoughtAsIngredient>
 			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<thingCategories>

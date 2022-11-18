@@ -3,10 +3,10 @@
 
 
 	<HediffDef>
-		<defName>MC_ConsumedBloodInfusedSauce</defName>
-		<label>consumed blood infused sauce (from meal)</label>
+		<defName>MC_ConsumedHemogenInfusedSauce</defName>
+		<label>consumed hemogen infused sauce (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Blood infused sauce reduces hunger rate by 30% for about a day.</description>
+		<description>Hemogen infused sauce reduces hunger rate by 30% for about a day.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -16,7 +16,7 @@
 		<comps>
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
-					<li>MC_ConsumedBloodInfusedSauce</li>
+					<li>MC_ConsumedHemogenInfusedSauce</li>
 				</thoughtDefs>
 			</li>
 		</comps>
@@ -98,10 +98,10 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>MC_ConsumedAlluvium</defName>
-		<label>consumed alluvium paste (from meal)</label>
+		<defName>MC_ConsumedJam</defName>
+		<label>consumed jam (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Alluvium paste enhances the user's mood and immunity gain speed.</description>
+		<description>Jam enhances the user's mood and movement speed.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -119,8 +119,6 @@
 			<li>
 				<statOffsets>
 					<HungerRateMultiplier>-0.05</HungerRateMultiplier>
-					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-					<ImmunityGainSpeed>0.10</ImmunityGainSpeed>
 				</statOffsets>
 				<capMods>
 					<li>

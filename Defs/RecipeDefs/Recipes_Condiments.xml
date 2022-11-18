@@ -13,23 +13,26 @@
 		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MC_Recipe_CondimentBase">
-		<defName>MC_BloodInfusedSauce</defName>
-		<label>make blood infused sauce</label>
-		<description>Create blood infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while. The alcohol evaporates in the process.</description>
+	<RecipeDef ParentName="MC_Recipe_CondimentBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>MC_HemogenInfusedSauce</defName>
+		<label>make hemogen infused sauce</label>
+		<description>Create hemogen infused sauce from alcohol and blood. Tastes good and makes you not want to eat for a while. The alcohol evaporates in the process.</description>
 		<jobString>Making blood infused sauce.</jobString>
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>MeatRaw</li>
-					</categories>
+					<thingDefs>
+						<li>HemogenPack</li>
+					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
-					<categories></categories>
+					<categories>
+						<li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+						<li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+					</categories>
 					<thingDefs>
 						<li>Beer</li>
 					</thingDefs>
@@ -38,15 +41,17 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>MeatRaw</li>
-			</categories>
 			<thingDefs>
 				<li>Beer</li>
+				<li>HemogenPack</li>
 			</thingDefs>
+			<categories>
+				<li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+				<li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+			</categories>
 		</fixedIngredientFilter>
 		<products>
-			<MC_BloodInfusedSauce>10</MC_BloodInfusedSauce>
+			<MC_HemogenInfusedSauce>10</MC_HemogenInfusedSauce>
 		</products>
 	</RecipeDef>
 
@@ -78,7 +83,7 @@
 	<RecipeDef ParentName="MC_Recipe_CondimentBase">
 		<defName>MC_AmbrosiaSauce</defName>
 		<label>make ambrosia sauce</label>
-		<description>Create ambrosia sauce. It increases the user's mood by a lot and enhances a few stats. Ambrosia sauce is not addictive.</description>
+		<description>Create ambrosia sauce. It increases the user's mood by a lot and enhances a few stats. Diluted Ambrosia sauce in food is not addictive.</description>
 		<jobString>Making ambrosia.</jobString>
 		<ingredients>
 			<li>
@@ -100,6 +105,31 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef ParentName="MC_Recipe_CondimentBase">
+		<defName>MC_Jam</defName>
+		<label>make berry jam spread</label>
+		<description>Create berry jam spread. It's sweet and fruity.</description>
+		<jobString>Making alluvium paste.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MC_Jam>10</MC_Jam>
+		</products>
+	</RecipeDef>
+
 	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
 		<workAmount>1000</workAmount>
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
@@ -110,6 +140,7 @@
 				<li>VCE_Salt</li>
 				<li>VCE_RawSpices</li>
 				<li>MC_Starch</li>
+				<li MayRequire="sihv.rombones">BoneItem</li>
 			</thingDefs>
 			<categories>
 				<li>FoodRaw</li>
@@ -243,9 +274,19 @@
 				</filter>
 				<count>5</count>
 			</li>
+			<li MayRequire="sihv.rombones">
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs></thingDefs>
+			<thingDefs>
+				<li MayRequire="sihv.rombones">BoneItem</li>
+			</thingDefs>
 			<categories>
 				<li>FoodRaw</li>
 			</categories>
@@ -316,9 +357,19 @@
 				</filter>
 				<count>5</count>
 			</li>
+			<li MayRequire="sihv.rombones">
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs></thingDefs>
+			<thingDefs>
+				<li MayRequire="sihv.rombones">BoneItem</li>
+			</thingDefs>
 			<categories>
 				<li>FoodRaw</li>
 			</categories>
