@@ -23,7 +23,7 @@
 	<ThingDef ParentName="MC_CondimentBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>MC_HemogenInfusedSauce</defName>
 		<label>hemogen-infused sauce</label>
-		<description>A thick sauce infused with alcohol and blood. Tastes good and makes you not want to eat for a while.</description>
+		<description>A thick sauce infused with alcohol and blood. Bloodfeeders can drink this sauce raw, but its flavour comes out while cooking. In a meal it makes any pawn not want to eat for a while.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Beer</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
