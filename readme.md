@@ -10,8 +10,5 @@ Thanks to CoMiGo!
 - Curry sauce (Spice + Mayo effects?) => Onion, ginger, spices, paprika, chili/pepper, tomato, salt
 - Salsa (Makes u Flirty + Heat)
 - mustard sauce (Mood boost, energy boost (manipulation + movement))
-- Cheese sauce (very filling)
-- Jam (Patch for Jammy & other jam related mods)
 - Dextrose (<ResearchSpeed>0.2</ResearchSpeed>)
-- Maggi würze
-- Zitronensaft
+- Citrus juice

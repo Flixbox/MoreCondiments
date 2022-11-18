@@ -55,6 +55,31 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef ParentName="MC_Recipe_CondimentBase">
+		<defName>MC_CheeseSauce</defName>
+		<label>make cheese sauce</label>
+		<description>Create an extremely filling cheesy sauce that drastically reduces hunger rate for 24 hours when cooked into a meal.</description>
+		<jobString>Making cheese sauce.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Cheese</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>VCE_Cheese</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<MC_CheeseSauce>10</MC_CheeseSauce>
+		</products>
+	</RecipeDef>
+
 	<RecipeDef ParentName="MC_Recipe_CondimentBase" Name="MC_Recipe_BrothBase" Abstract="True">
 		<workAmount>1000</workAmount>
 		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>

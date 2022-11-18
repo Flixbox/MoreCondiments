@@ -178,6 +178,31 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MC_CondimentBase">
+		<defName>MC_CheeseSauce</defName>
+		<label>cheese sauce</label>
+		<description>An extremely filling sauce. You won't be eating for a while after eating a meal made with this sauce.</description>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Nutrition>0</Nutrition>
+			<Flammability>1.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Drug/Yayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(255,51,255)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedCheeseSauce</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothSimple</defName>
 		<label>simple meat broth</label>
 		<description>Simple meat broth. Tastes quite decent. Slightly affects the body's blood pressure.</description>

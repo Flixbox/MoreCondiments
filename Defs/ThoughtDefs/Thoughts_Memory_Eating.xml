@@ -75,6 +75,20 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>MC_ConsumedCheeseSauce</hediff>
+		<defName>MC_ConsumedCheeseSauce</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed cheese sauce</label>
+				<description>That was pretty tasty. I feel extremely full.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>MC_ConsumedBrothSimple</defName>
 		<durationDays>1</durationDays>
 		<stages>
