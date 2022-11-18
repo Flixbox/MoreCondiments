@@ -6,7 +6,7 @@
 		<defName>MC_ConsumedHemogenInfusedSauce</defName>
 		<label>consumed hemogen infused sauce (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Hemogen infused sauce reduces hunger rate by 30% for about a day.</description>
+		<description>Hemogen infused sauce reduces hunger rate for about a day. Bloodfeeders have an easier time consuming hemogen.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -22,8 +22,9 @@
 		</comps>
 		<stages>
 			<li>
+				<hungerRateFactorOffset>-0.25</hungerRateFactorOffset>
 				<statOffsets>
-					<HungerRateMultiplier>-0.30</HungerRateMultiplier>
+					<HemogenGainFactor>+0.3</HemogenGainFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -33,7 +34,7 @@
 		<defName>MC_ConsumedStarch</defName>
 		<label>consumed starch (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Thick corn starch reduces hunger rate by 15% for 24 hours. It is also is easily converted into energy by the body, which results in a nice burst of energy.</description>
+		<description>Thick corn starch reduces hunger rate for 24 hours. It is also is easily converted into energy by the body, which results in a nice burst of energy.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -102,7 +103,7 @@
 		<defName>MC_ConsumedCondensedMilk</defName>
 		<label>consumed condensed milk (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Condensed milk increases manipulation by 10% for 24 hours.</description>
+		<description>Condensed milk increases manipulation for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -132,7 +133,7 @@
 		<defName>MC_ConsumedCheeseSauce</defName>
 		<label>consumed cheese sauce (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Cheese sauce reduces hunger rate by 70% for 24 hours.</description>
+		<description>Cheese sauce reduces hunger rate drastically for 24 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>
@@ -163,7 +164,7 @@
 		<defName>MC_ConsumedAmbrosia</defName>
 		<label>consumed ambrosia sauce (from meal)</label>
 		<makesSickThought>false</makesSickThought>
-		<description>Ambrosia sauce enhances the user's mood by a lot.</description>
+		<description>Ambrosia sauce enhances the user's mood. It also enhances the user's body a bit.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(92,62,198)</defaultLabelColor>

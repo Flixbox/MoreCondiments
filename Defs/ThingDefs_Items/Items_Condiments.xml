@@ -26,7 +26,7 @@
 			<workSpeedStat>CookSpeed</workSpeedStat>
 			<effectWorking>Cook</effectWorking>
 			<soundWorking>Recipe_CookMeal</soundWorking>
-			<workAmount>200</workAmount>
+			<workAmount>100</workAmount>
 			<recipeUsers>
 				<li>VCE_CondimentPrepTable</li>
 			</recipeUsers>
