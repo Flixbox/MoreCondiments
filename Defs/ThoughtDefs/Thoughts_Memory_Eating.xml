@@ -61,6 +61,20 @@
 
 	<ThoughtDef>
 		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>MC_ConsumedCondensedMilk</hediff>
+		<defName>MC_ConsumedCondensedMilk</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed condensed milk</label>
+				<description>That was pretty tasty. It makes me feel nostalgic.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 		<defName>MC_ConsumedBrothSimple</defName>
 		<durationDays>1</durationDays>
 		<stages>

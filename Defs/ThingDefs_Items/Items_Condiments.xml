@@ -148,6 +148,35 @@
 		</costList>
 	</ThingDef>
 
+	<ThingDef ParentName="MC_CondimentCraftableBase">
+		<defName>MC_CondensedMilk</defName>
+		<label>condensed milk</label>
+		<description>A sweet milk that distracts from the woes of daily life.</description>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Nutrition>0</Nutrition>
+			<Flammability>1.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Drug/Yayo</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.90</drawSize>
+			<color>(255,51,255)</color>
+		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>MC_ConsumedCondensedMilk</specialThoughtAsIngredient>
+			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<costList>
+			<Milk>1</Milk>
+			<VCE_RawSugar>1</VCE_RawSugar>
+		</costList>
+	</ThingDef>
+
 	<ThingDef ParentName="MC_CondimentBase">
 		<defName>MC_BrothSimple</defName>
 		<label>simple meat broth</label>

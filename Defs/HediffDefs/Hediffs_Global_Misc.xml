@@ -63,6 +63,36 @@
 	</HediffDef>
 
 	<HediffDef>
+		<defName>MC_ConsumedCondensedMilk</defName>
+		<label>consumed condensed milk (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Condensed milk increases movement by 10% for 24 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>MC_ConsumedCondensedMilk</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>MC_ConsumedAmbrosia</defName>
 		<label>consumed ambrosia sauce (from meal)</label>
 		<makesSickThought>false</makesSickThought>
@@ -111,7 +141,7 @@
 		<comps>
 			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
-					<li>MC_ConsumedAlluvium</li>
+					<li>MC_ConsumedJam</li>
 				</thoughtDefs>
 			</li>
 		</comps>
