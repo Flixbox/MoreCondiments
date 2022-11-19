@@ -1,5 +1,7 @@
 # More Condiments
 
+Migrated to https://github.com/Flixbox/KYD_MoreCondiments
+
 ## Condiments
 
 ### Hemogen Infused Sauce
